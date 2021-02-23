@@ -1,0 +1,80 @@
+:root{
+    font-family: "Inconsolata", "Lucida Console";
+    --clr-primary: #333333;
+    --clr-primary-hover:#333333DD;
+}
+.body_container {
+    padding: 0 2rem;
+}
+.head_container {
+    height: 10vh;
+    display: flex;
+    align-items: center;
+}
+.head_container h3 {
+    color: var(--clr-primary);
+    font-size: 24px;
+    font-weight: bold;
+}
+.main_container {
+    height: 80vh;
+    margin-bottom: 10vh;
+    display: flex;
+    flex-wrap: wrap;
+}
+.img_container {
+    width: 50%;
+    display: flex;
+}
+.img_el {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.text_container {
+    width: 50%;
+}
+.text_title {
+    color: var(--clr-primary);
+    font-size: 48px;
+    line-height: 1.5;
+    font-weight: bold;
+}
+.text_description {
+    width: 70%;
+    font-size: 22px;
+    font-weight: lighter;
+    margin-bottom: 3rem;
+}
+.back_home {
+    text-decoration: none;
+    color: var(--clr-primary);
+    text-transform: uppercase;
+    background: var(--clr-primary);
+    color: white;
+    padding: 1rem;
+}
+.back_home:hover {
+    background: var(--clr-primary-hover);
+}
+
+@media screen and (max-width: 768px) {
+    .img_container, .text_container {
+        width: 100%;
+    }
+    .head_container {
+        height: 5vh;
+    }
+    .img_container {
+        height: 30vh;
+    }
+    .text_container {
+        height: 65vh;
+    }
+    .text_description {
+        width: 100%;
+    }
+    .body_container {
+        padding: 0 1rem;
+    }
+}
